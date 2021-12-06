@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Some title</title>
+    <title>Data Sculpture 1659</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Fira+Sans" rel="stylesheet">
@@ -16,6 +16,10 @@
       color: white;
       text-align: center;
     }
+    body {
+      background-color: black;
+    }
+
 
     header .frame1 {
           background: url("images/05_1659_WEB.jpg") no-repeat center;
@@ -42,8 +46,15 @@
     }
     p {
       padding-bottom: 20px;
-      margin-bottom: 0px;
-      padding-top: 20px;
+      margin-bottom: 10px;
+      padding-top: 10px;
+      font-size: 20px;
+      color: #f3f3f3;
+    }
+
+    li {
+      font-size: 20px;
+      color: #f3f3f3;
     }
 
     img {
@@ -53,6 +64,7 @@
 
     h2 {
       padding-top: 20px;
+      color: #5a8b5f;
     }
 
   /* page intro */
@@ -93,8 +105,8 @@
 
     #scrolly {
         position: relative;
-        background-color: #f3f3f3;
-        padding: 1rem;
+        background-color: #000000;
+        height: 300vh;
       }
 
       article {
@@ -105,17 +117,20 @@
       }
 
       .sticky-thing {
+        object-fit: cover;
+        top: 0;
+        left: 0;
         position: -webkit-sticky;
         position: sticky;
         left: 0;
         width: 100%;
+        height: 100vh;
         margin: 0;
-        background-color: #8a8a8a;
+        background-color: #000000;
         z-index: 0;
         top: 12.5vh;
         height: 75vh;
         /* Center everything inside */
-        display: flex;
         align-items: center;
         justify-content: center;
         background-image: url('images/15_1659_WEB.jpeg');
@@ -130,8 +145,8 @@
       }
 
       .step {
-        margin: 0 auto 2rem auto;
-        margin-bottom: 15rem;
+        margin: 0 -5rem 2rem -5rem;
+        margin-bottom: 25rem;
         color: #fff;
         background-color: #8a8a8aa1;
       }
@@ -141,8 +156,8 @@
       }
 
       .step.is-active p {
-        background-color: rgb(124 225 148 / 80%);
-        color: #3b3b3b;
+        background-color: rgb(90 139 95 / 80%);
+        color: #050505;
       }
 
       .step p {
@@ -152,11 +167,182 @@
         background-color: #292929a1;
       }
 
-    
+body {
+  font-family: "Source Sans Pro";
+  overflow-x: hidden;
+}
+
+   /* scrolly-2 */
+
+      .sticky-thing-2 {
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        background-color: #000000;
+        z-index: 0;
+        top: 12.5vh;
+        height: 75vh;
+        /* Center everything inside */
+        align-items: center;
+        justify-content: center;
+        background-image: url('images/05_1659_WEB.jpg');
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .sticky-thing-2 p {
+        font-size: 8rem;
+        font-weight: 900;
+        color: #fff;
+      }
+
+      .header h1 {
+        font:"Source Sans Pro - Black";
+        color: #ffffff;
+        font-size: 130px;
+      }
+
+      .header h2 {
+        color: #ffffff;
+        font-size: 40px;
+      }
+
+
+/* video styles */
+video .videocontainer{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.opening {
+  height: 100vh;
+  background: url(images/21_1659_WEB.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.videocontainer {
+  height: 20%;
+}
+
+video {
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+video.video {
+    margin:5px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+h1.videocontainer {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  position:absolute;
+    top:0;
+    left:0;
+}
+
+/* Table Info Section */
+
+  .tableinfo {
+    background: url(images/21_1659_WEB.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 5em;
+  }
+
+  .backgroundtext {
+    background-color: rgba(34, 34, 34, 0.9);
+  }
+
+/* Get Involved */
+
+  .overlay-desc {
+    background: rgba(0,0,0,0);
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .involvedvideo {
+    height: 80%;
+  }
+
+/* Nav Bar */
+
+  .navbar-custom {
+      background-color: #ff5500;
+  }
+  /* change the brand and text color */
+  .navbar-custom .navbar-brand,
+  .navbar-custom .navbar-text {
+      color: rgba(255,255,255,.8);
+  }
+  /* change the link color */
+  .navbar-custom .navbar-nav .nav-link {
+      color: rgba(255,255,255,.5);
+  }
+  /* change the color of active or hovered links */
+  .navbar-custom .nav-item.active .nav-link,
+  .navbar-custom .nav-item:hover .nav-link {
+      color: #ffffff;
+  }
+
+  /* A link color */
+a:link {
+  color: rgb(90 139 95);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(90 139 95);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(180, 211, 202);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
     </style>
 
-    <title>Hello, world!</title>
+    <title>Food Security</title>
   </head>
+
+  
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -168,7 +354,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#see-it">See the Sculpture <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#see-it">See the Sculpture <span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#mass-hunger">Mass Hunger</a>
@@ -188,62 +374,85 @@
       </div>
     </nav>
 
+    <section class="opening">
+      <div class="header text-center pt-5">
+        <h1>1,659</h1>
+        <h2>Food Security Data Sculpture</h2>
+      </div>  
+    </section>
+  
     <header>
-        <!-- <div id="pageintro" class="topheading">
-            <h1>1,659</h1>
-            <p>The pandemic has affected so many aspects of our lives, amplifying disparities and challenges that already existed. For far too many households simply having access to enough food to eat is a daily challenge. 
-            </p>    
-          </div>
-        <div id="pageintro2" class="frame1">
-              <p>During the early months of the COVID pandemic, an average of 1,659 new households applied for SNAP benefits every DAY in Massachusetts. 
-              </p>    
-            </div>
-          <div id="pageintro2" class="frame2">
-                <p>The pandemic has affected so many aspects of our lives, amplifying disparities and challenges that already existed. For far too many households simply having access to enough food to eat is a daily challenge. 
-                </p>    
-              </div>
-            <div id="pageintro2" class="frame3">
-                  <p>This data sculpture was inspired by that number -  each of the 1,659 households is represented by one knife, spoon, or fork.
-                  </p>    
-              </div> -->
               <section id="scrolly">
                 <div class="sticky-thing">
                 </div>
-        
+
                 <article>
                   <div class="step" data-step="1" data-color="red">
-                    <p>The pandemic has affected so many aspects of our lives, amplifying disparities and challenges that already existed. For far too many households simply having access to enough food to eat is a daily challenge.</p>
+                    <p>The pandemic has affected so many aspects of our lives, amplifying disparities and challenges that already existed.</p>
                   </div>
                   <div class="step" data-step="2" data-color="green">
-                    <p>During the early months of the COVID pandemic, an average of 1,659 new households applied for SNAP benefits every DAY in Massachusetts.</p>
+                    <p>For far too many households simply having access to enough food to eat is a daily challenge.</p>
                   </div>
                   <div class="step" data-step="3" data-color="blue">
-                    <p>he pandemic has affected so many aspects of our lives, amplifying disparities and challenges that already existed. For far too many households simply having access to enough food to eat is a daily challenge. </p>
+                    <p>During the early months of the COVID pandemic, an average of 1,659 new households applied for SNAP benefits every DAY in Massachusetts. </p>
                   </div>
                   <div class="step" data-step="4" data-color="red">
-                    <p>This data sculpture was inspired by that number -  each of the 1,659 households is represented by one knife, spoon, or fork.</p>
+                    <p>The pandemic has affected so many aspects of our lives, amplifying disparities and challenges that already existed.</p>
                   </div>
                 </article>
               </section>
       </header>
 
+      <header>
+        <section id="scrolly">
+          <div class="sticky-thing-2">
+          </div>
+
+          <article>
+            <div class="step" data-step="1" data-color="red">
+              <p>For far too many households simply having access to enough food to eat is a daily challenge.</p>
+            </div>
+            <div class="step" data-step="2" data-color="green">
+              <p>This data sculpture was inspired by that number</p>
+            </div>
+            <div class="step" data-step="3" data-color="blue">
+              <p> Each of the 1,659 households is represented by one knife, spoon, or fork.</p>
+            </div>
+          </article>
+        </section>
+</header>
+
     <a name="see-it" />
-    <div>
+    <div class="tableinfo">
       <div class="container">
-      <h2>See it</h2>
-      <div class="row">
-        <div class="col-12">
+        <div class="row">
+          <div class="col-12">
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <p>
-            The pandemic has affected so many aspects of our lives, amplifying disparities and challenges that already existed. For far too many households simply having access to enough food to eat is a daily challenge. During the early months of the COVID pandemic, an average of 1,659 new households applied for SNAP benefits every DAY in Massachusetts. This data sculpture was inspired by that number -  each of the 1,659 households is represented by one knife, spoon, or fork. The pandemic is slowing here, but these families and others facing food insecurity still struggle to put food on their tables.
-            On this site you can learn about <a href="#calendar">where you can see the sculpture</a>, discover <a href="#find-food">local resources</a> if you are in need, and learn <a href="#ways-to-help">ways you can help</a>.
-          </p>
+        <div class="row">
+          <div class="col-md-6 backgroundtext">
+            <h2 class="text-center">See it</h2>
+            <p>
+              The pandemic is slowing here, but these families and others facing food insecurity still struggle to put food on their tables.
+              On this site you can learn about <a href="#calendar">where you can see the sculpture</a>, discover <a href="#find-food">local resources</a> if you are in need, and learn <a href="#ways-to-help">ways you can help</a>.
+            </p>
+            <p>
+              Current and Upcoming Exhibitions: 
+              <ul>
+                <li>Oct 30 - Dec 12: The Ru Institute (Maine)</li>
+                  <li>Sept 10 - Oct 2: The @W Gallery (Wayland, MA)</li>
+                    <li>Oct 17 - 24: Somerville Community Growing Center (Somerville, MA), for their annual Harvest Festival</li>
+                    <li>Aug 27 - Sept 9: Northeastern University (Boston, MA), at the Curry Student Center Sculpture Garden (map location)</li>
+                    <li>Food drive and art event 9/8 3-5pm (flyer)</li>
+                      <li>Aug 6-26: Revere Farmer's Market (Revere, MA), for National Farmer's Week</li>
+                      <li>July 24 - Aug 5: Center for Arts at the Armory (Somerville, MA)</li>
+                      <li>July 19-23: South Street Farm (Somerville, MA), hosted by Groundwork Somerville)</li>
+              </ul>
+            </p>
+          </div>
         </div>
         <div class="col-md-6">
-          <img src="images/32_1659_WEB.jpg" width="80%" position=relative; />
+          <img src="images/32_1659_WEB.jpg" width="80%" position=absolute; />
         </div>
       </div>
     </div>
@@ -252,29 +461,43 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
-          <h2>Hunger in Mass</h2>
+          <h2>Hunger in Massachusetts</h2>
           <p>Feeding America defines food insecurity as “a lack of consistent access to enough food for every person in a household to live an active, healthy life”. Food insecurity is caused by a number of social and economic factors, but can be triggered by a sudden event (such as job loss, car maintenance, etc.) and seriously impacts both adult and child health. People and families living in poverty are more likely to experience food insecurity, and other factors that put people at higher risk of insecurity are race, immigration status, and geographic location. These factors alone are not causal with food insecurity, rather it is systemic injustices and oppressions that have caused this link.</p>
+          <video class="video" controls playsinline>
+            <source src="videos/Maria Clip 1 - A4.mp4" type="video/mp4">
+        </video>
           <p>
             Many food insecure people live in areas without proper access to grocery stores and fresh produce, meaning they have to rely on local convenience stores and predominantly non-perishable grocery items for the bulk of their diet.
           </p>
-          <img src="images/Screen Shot 2021-09-23 at 8.41.43 AM.png" width="100%" position=relative; />
-          <iframe src="https://player.vimeo.com/video/518461015" width="840" height="664" frameborder="0" allow="autoplay; fullscreen" position=relative></iframe>
+          <video class="video" controls playsinline>
+            <source src="videos/Maria Clip 2 - A2.mp4" type="video/mp4">
+        </video>
           <p>
             Before the beginning of the COVID-19 pandemic in early 2020, Project Bread reported the household food insecurity rate to be 8.2% in Massachusetts. From 2019 to 2020, the state of Massachusetts saw a 55% increase in the number of residents facing food insecurity, according to a survey led by the Greater Boston Food Bank. According to Project Bread, food insecurity peaked in May 2020 and has trended downward since, but remains above pre-pandemic levels. 
           </p>
-          <img src="images/Screen Shot 2021-09-23 at 8.52.42 AM.png" width="100%" position=relative;/>
+          <video class="video" controls playsinline>
+            <source src="videos/PB Clip 1.mp4" type="video/mp4">
+        </video>
           <img src="images/Screen Shot 2021-10-31 at 10.40.26 PM.png" width="100%" position=relative;/>
           <p>
             Non-white residents have historically been overrepresented in those experiencing food insecurity. Particularly, Black, Latinx, and multiracial households are nearly twice as likely to experience food insecurity as white households. The Food Bank published that “among Massachusetts residents, 58 percent of Latinx adults, 45 percent of Black adults, 26 percent of Asian adults, 24 percent of White adults and 42 percent of adults with children reported experiencing food insecurity” (GBFB). Non-white households are more likely to live in locations that lack access to fresh food, public transportation, and have children who receive breakfast and lunch through the National School Lunch Program (NSLP). These households have been hit the hardest by the pandemic in all aspects, including job loss and infection rate, due to centuries of systemic racism within healthcare, infrastructure, and the workforce. 
           </p>
           <p>Among the programs designed to alleviate hunger and food insecurity are the Supplemental Nutrition Assistance Program (SNAP), EBT, and HIP. In Massachusetts, the number of residents enrolling in SNAP has increased significantly. The program increased benefits amounts so that households could receive the maximum amount through June 2021. However, since Massachusetts ended the state of emergency of June 15, these expanded benefits ended at the end of the month.
           </p>
+          <video class="video" controls playsinline>
+            <source src="videos/PB Clip 2.mp4" type="video/mp4">
+        </video>
           <p>From May 2019 to June 2021, SNAP enrollment went up by 27.5%. It is estimated that 1,659 new households applied for SNAP benefits in Massachusetts each day during the pandemic, giving the inspiration for our data sculpture. It is estimated that only half of people eligible for SNAP benefits enroll in them. There are several reasons for this under enrollment, including stigma and a desire for self-sufficiency. In Massachusetts, MassHealth data shows that 659,340 people fall in this gap, and a quarter of them are children. 
           </p>
-          <img src="images/Screen Shot 2021-10-31 at 11.06.44 PM.png" width="100%" position=relative;/>
-          <img src="images/Screen Shot 2021-09-23 at 9.18.32 AM.png" width="100%" position=relative;/>
+          <img src="data/Project_Bread.svg" width="100%" position=relative;/>
+          <video class="video" controls playsinline>
+            <source src="videos/PB Clip 3.mp4" type="video/mp4">
+        </video>
           <p>The solution to food insecurity is not simply getting people more food. Rather, it is both a systems and interpersonal level shift towards food sovereignty that is the goal. Food sovereignty is a concept developed by Via Campesina, the International Peasants’ Movement and leader in the food justice movement. They define food sovereignty as “the peoples’, Countries’ or State Unions’ RIGHT to define their agricultural and food policy, without any dumping vis-à-vis third countries”. You can read more about the principles of food sovereignty and the work that Via Campesina does here. 
           </p>
+          <video class="video" controls playsinline>
+            <source src="videos/Haley House Clip 1.mp4" type="video/mp4">
+        </video>
         </div>
       </div>
     </div>
@@ -304,23 +527,40 @@
     <div class="container">
         <div class="row">
       <h2>Get Involved</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p>There are many ways to get involved. You can <a href="https://haleyhouse.org/">visit the Greater Boston Food Bank</a> to see multiple ways for both institutions and individuals to get involved in the fight against food insecurity. The <a href="https://haleyhouse.org/">Haley House</a> food pantry located in the South End welcomes volunteers to help run their soup kitchen. Reach out to them to learn more. </p>
       </div>
     </div>
+
+    <section>
+      <div class="video-container">
+        <video class="involvedvideo" playsinline autoplay muted loop>
+          <source type="video/mp4" src="videos/INTRO_FOOD_SECURITY.mp4">
+        </video>
+      </div>
+    </section>
 
     <a name="in-the-news"/>
     <div class="container">
       <div class="row">
       <h2>In the News</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p>
+        <ul>
+          <li>Hunger Reimagined: the story of food insecurity as told through sculpture (Northeastern News, Sep 7 2021)</li>
+          <li>Local artists' sculpture shows scale of food insecurity in Mass, as problem rages on (Somerville Journal, Aug 5 2021)</li>
+        </ul>
+      </p>
     </div>
     </div>
 
     <a name="team"/>
     <div class="container">
       <div class="row">
-        <h2>Team</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h2>Team</h2>  
+        <p>Emily Bhargava (Principal, Connection Lab) - Conceptualization, Design, Fabrication, Outreach</p>
+        <p>Rahul Bhargava (Assistant Professor, Northeastern University) - Conceptualization, Design, Research, Outreach, Website</p>
+        <p>Sofia Perez (Gradute Student, Northeastern University) - Research, Web Design, Media Production</p>
+        <p>Becca Berkey, Ph. D. (Education Innovation, Northeastern University) - Facilitation, Student Direction</p>
+        <p>Student Research Support: Kelly Marchese, Sarina Wasserman, Jason McMorris, Mary Moskowitz, Minzhong Wang (Students, Northeastern University)</p>
       </div>
     </div>
 
